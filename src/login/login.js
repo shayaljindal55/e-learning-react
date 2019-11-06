@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './login.css';
 import { Route, Link } from 'react-router-dom';
 import Register from '../register/register';
+import { withRouter } from "react-router-dom";
 class Login extends Component {
 
     constructor(props) {
@@ -25,6 +26,8 @@ class Login extends Component {
       //  if (!event.target.checkValidity()) {
             this.setState({ displayErrors: true });
             event.preventDefault();
+            this.props.history.push('/home');
+
             let obj = {};
             obj.email = this.state.email;
             obj.password = this.state.password;
@@ -45,7 +48,7 @@ class Login extends Component {
 
     render() {
         return (
-            <div id="id01" className="Login" onSubmit={this.loginService.bind(this)}>
+            <div id="id01" className="login" onSubmit={this.loginService.bind(this)}>
                 <form className="modal-content animate" >
                     <div className="imgcontainer">
                         <img src="img_avatar2.png" alt="Avatar" className="avatar" />
@@ -70,4 +73,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default withRouter(Login);

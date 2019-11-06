@@ -5,7 +5,7 @@ import { Route, Link } from 'react-router-dom';
 import Login from '../login/login';
 function Register() {
     return (
-        <div id="id01" classNameName="Login">
+        <div id="id01" className="register">
             <div className="modal-content animate">
                 <div className="container">
                     <h1>Register</h1>
