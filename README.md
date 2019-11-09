@@ -67,3 +67,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # e-learning-react
+
+# Screen shots
+![Creating](statics/images/login.PNG "login")
+![Creating](statics/images/register.PNG "register")
+![Creating](statics/images/about-us.PNG "about-us")
+![Creating](statics/images/contact-us.PNG "contact-us")
+![Creating](statics/images/landing.PNG "landing")
+![Creating](statics/images/carousel.PNG "carousel")
