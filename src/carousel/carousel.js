@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { Carousel } from 'react-responsive-carousel';
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import axios from 'axios';
 
-class VideoCarousel extends Component {
+class VideoCarousel extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -13,8 +13,11 @@ class VideoCarousel extends Component {
                 description: '',
                 url: ''
             }],
-            isLoading: true, error: null,
+            isLoading: true, error: null, loaded: false
         };
+        // this.getAllTutorials();
+    }
+    componentWillMount() {
         this.getAllTutorials();
     }
 
@@ -25,45 +28,13 @@ class VideoCarousel extends Component {
                 await axios.get(url)
                     .then(res => {
                         console.log(res);
-                        this.setState({ tutorials: res.data.tutorials, isLoading: false })
+                        this.setState({ tutorials: res.data.tutorials, isLoading: false, loaded: true })
                     })
 
             } catch (err) {
                 console.error(err);
             }
         })();
-
-    }
-    async getAllTutorials2() {
-        try {
-            return fetch('http://localhost:4747/getAllTutorial', {
-                header: {
-                    'Accept': 'application/json',
-                    "Content-Type":"application/json"              },
-                method: "GET",
-                // mode: "no-cors"
-            })
-                .then(response => {
-                    return this.parseJSON(response)
-                })
-                .then((data) => {
-                    let result = data ? JSON.parse(data) : {};
-                    debugger
-                    this.setState({ tutorials: result, isLoading: false })
-                })
-                .catch((error) => {
-                    this.setState({ error: error.message, isLoading: false });
-                })
-
-        } catch (error) {
-            this.setState({ error: error.message, isLoading: false });
-        }
-    }
-
-    parseJSON(response) {
-        return response.text().then(function (text) {
-            return text ? JSON.parse(text) : {}
-        })
     }
 
     render() {
@@ -75,17 +46,14 @@ class VideoCarousel extends Component {
             return <div>Loading...</div>;
         }
         return (
-            <Carousel showArrows={true}>
+            <Carousel showThumbs={false} showArrows={false}>
                 {tutorials.map((value, index) => {
                     return <div>
-                        <img src={value.url} alt="" />
-                        <p className="legend">{value.info}</p>
+                        <iframe width="560" height="480" src={value.url} title={value.info}></iframe>
                     </div>
                 })}
             </Carousel>
         );
     }
 }
-
-ReactDOM.render(<VideoCarousel />, document.querySelector('.video-carousel'));
 export default VideoCarousel;
