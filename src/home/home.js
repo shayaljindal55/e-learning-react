@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import './home.css';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
-    getAllTutorials(event) {
-        event.preventDefault();
+    constructor() {
+        super()
+        this.getAllTutorials();
+    }
+
+    getAllTutorials() {
         fetch('http://localhost:4747/getAllTutorials',
             {
                 header: {
-                    "Content Type": "application/json"
+                    "Content Type": "application/json",
+                    "Access-Control-Allow-Origin": "*"
                 },
-                method: "GET"
+                method: "GET",
+                mode: 'no-cors'
             }).then(result => {
                 console.log('all state', this.state);
             })

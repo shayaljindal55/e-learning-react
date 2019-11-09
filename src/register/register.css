@@ -6,6 +6,9 @@ body {
   * {
     box-sizing: border-box;
   }
+  .register-modal {
+    margin: 0% auto 15% auto;
+  }
   
   /* Add padding to containers */
   .container {

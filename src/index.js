@@ -12,6 +12,7 @@ import Contact from "./contact/contact";
 import About from "./about/about";
 import Home from "./home/home";
 import { withRouter } from "react-router-dom";
+import VideoCarousel from './carousel/carousel';
 
 const Main = withRouter(({ location }) => {
     return (
@@ -25,7 +26,9 @@ const Main = withRouter(({ location }) => {
             <Route path="/register" component={Register} />
             <Route path="/contact" component={Contact} />
             <Route path="/about" component={About} />
-            <Route path="/home" component={Home} />
+            <Route path="/home" component={Home} />       
+            <Route path="/viewAll" component={VideoCarousel} />
+            
             {
                 location.pathname !== '/' && location.pathname !== '/login'
                 && location.pathname !== '/register' && <Footer />

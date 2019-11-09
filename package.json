@@ -7,6 +7,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
     "bootstrap": "^4.3.1",
+    "http-proxy-middleware": "^0.20.0",
     "jquery": "^3.4.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -14,9 +15,11 @@
     "react-image": "^2.2.1",
     "react-image-video-gallery": "^0.8.18",
     "react-images-and-video": "git+https://github.com/luojxxx/react-images-and-video.git",
+    "react-responsive-carousel": "^3.1.51",
     "react-router": "^5.1.2",
     "react-scripts": "3.2.0",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "superagent": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

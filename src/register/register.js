@@ -6,7 +6,7 @@ import Login from '../login/login';
 function Register() {
     return (
         <div id="id01" className="register">
-            <div className="modal-content animate">
+            <div className="modal-content register-modal animate">
                 <div className="container">
                     <h1>Register</h1>
                     <p>Please fill in this form to create an account.</p>
