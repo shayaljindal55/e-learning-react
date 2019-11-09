@@ -3,7 +3,7 @@ import './footer.css';
 
 function Footer() {
     return (
-        <div class="footer">
+        <div className="footer">
             <p>Designed and Developed by <b>Shayal Jindal</b></p>
         </div>
     );

@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import Login from './login/login';
 import Register from './register/register';
 import Header from "./shared/header/header";
-import Notfound from "./shared/notFound/notFound";
 import Footer from "./shared/footer/footer";
+import Contact from "./contact/contact";
+import About from "./about/about";
 import Home from "./home/home";
 import { withRouter } from "react-router-dom";
 
@@ -22,6 +23,8 @@ const Main = withRouter(({ location }) => {
             <Route exact path="/" component={App} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/about" component={About} />
             <Route path="/home" component={Home} />
             {
                 location.pathname !== '/' && location.pathname !== '/login'

@@ -1,0 +1,22 @@
+#about {
+    background-image: url("../shared/img/About-Us.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 15%;
+  }
+.center-text{
+    color: #4CAF50;
+    font-weight: bold;
+}
+.about-us-text {
+    font-size: 18px;
+    font-family: cursive;
+    padding: 1% 0% 0% 5%;
+    /* color:#ffffff; */
+    margin-bottom: 15%;
+}
+.about-us-text >span {
+    padding-left: 29%;
+}

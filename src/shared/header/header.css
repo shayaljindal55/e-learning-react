@@ -53,5 +53,9 @@ body {
 }
 
 .e-logo{
-width: 10%;
+  width: 10%;
+  cursor: pointer; 
+}
+.e-logo :hover {
+  cursor: pointer; 
 }

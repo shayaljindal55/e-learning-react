@@ -1,0 +1,20 @@
+.center-text{
+    color: #4CAF50;
+    font-weight: bold;
+}
+.about-us-text {
+    font-size: 18px;
+    font-family: cursive;
+    padding: 5%;
+}
+.about-us-text >span {
+    padding-left: 42%;
+}
+#contact{
+        background-image: url("../shared/img/contact-us.jpg");     
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding-bottom: 15%;
+}
