@@ -13,6 +13,7 @@ import About from "./about/about";
 import Home from "./home/home";
 import { withRouter } from "react-router-dom";
 import VideoCarousel from './carousel/carousel';
+import ManageTutorials from './crud-tutorial/crud.tutorial';
 
 const Main = withRouter(({ location }) => {
     return (
@@ -28,6 +29,8 @@ const Main = withRouter(({ location }) => {
             <Route path="/about" component={About} />
             <Route path="/home" component={Home} />       
             <Route path="/viewAll" component={VideoCarousel} />
+            <Route path="/viewAll/:searchInput" component={VideoCarousel} />
+            <Route path="/manageTutorials" component={ManageTutorials} />
             
             {
                 location.pathname !== '/' && location.pathname !== '/login'

@@ -1,0 +1,57 @@
+body {
+    overflow: auto;
+  }
+.url-link {
+    color:blue;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
+}
+  
+.url-link:hover {
+    color: #4CAF50;
+  }
+  
+  .url-link:active {
+    color:#4CAF50;
+    font-weight: bold;
+  }
+  
+ .url-link:visited {
+    background-color: #ccc;
+  }
+.add-new {
+    width: 10%;
+    float: right;
+    margin-right: 2%;
+}
+.k-button.k-primary, .k-slider .k-draghandle {
+    border-color: #4CAF50 !important; 
+    color: #fff;
+    background-color: #4CAF50 !important;
+    background-image: linear-gradient(rgba(255,138,88,0),rgba(255,138,88,0.2));
+}
+.k-command-cell>.k-button {
+    margin-left: .16em;
+    margin-right: .16em;
+    margin-bottom: .5em;
+}
+.k-grid-header .k-header>.k-link {
+    margin: -8px -12px;
+    padding: 8px 12px;
+    line-height: inherit;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: 0;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 16px;
+    /* text-align: center; */
+    text-decoration: underline;
+}
+.k-grid-edit-row td>.k-textbox, .k-grid-edit-row td>.k-widget, .k-command-cell>.k-button, .k-edit-cell>.k-textbox, .k-edit-cell>.k-widget {
+    margin-top: -5px;
+    vertical-align: middle;
+    margin-bottom: .5em !important;
+}

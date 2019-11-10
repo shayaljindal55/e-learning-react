@@ -17,6 +17,7 @@ class Header extends Component {
             <div className="header">
                 <img src="e-learning.jpg" alt="Logo" className="e-logo" onClick={this.gotToHomePage} />
                 <div className="header-right">
+                <Link to="/manageTutorials" className="manage-tutorials">Manage Tutorials</Link>
                     <Link to="/viewAll" className="view-all">View All Tutorials</Link>
                     <Link to="/contact">Contact</Link>
                     <Link to="/about">About</Link>
