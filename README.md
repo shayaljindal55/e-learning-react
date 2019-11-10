@@ -75,3 +75,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ![Creating](statics/images/contact-us.PNG "contact-us") -->
 ![Creating](statics/images/landing.PNG "landing")
 ![Creating](statics/images/carousel.PNG "carousel")
+![Creating](statics/images/search-output.PNG "landing")
+![Creating](statics/images/CRUD-Tutorials.PNG "carousel")
