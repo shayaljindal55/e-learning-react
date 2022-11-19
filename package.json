@@ -29,7 +29,7 @@
     "react-images-and-video": "git+https://github.com/luojxxx/react-images-and-video.git",
     "react-responsive-carousel": "^3.1.51",
     "react-router": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.1.1",
     "superagent": "^5.1.0"
   },
